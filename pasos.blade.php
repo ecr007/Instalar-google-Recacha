@@ -15,6 +15,13 @@
   // comprueba la clave secreta
   $reCaptcha = new ReCaptcha($secret);
   
+  if ($_POST["g-recaptcha-response"]) {
+		    $response = $reCaptcha->verifyResponse(
+		        $_SERVER["REMOTE_ADDR"],
+		        $_POST["g-recaptcha-response"]
+		    );
+		}
+  
   //Accion a realizar en caso de no ser valido el capcha
   if ($response == null && $response->success == false) {
   	die(header("Location: ".$me_voy."=3"));
