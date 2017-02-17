@@ -1,3 +1,6 @@
+ACTUALIZADO
+https://github.com/google/recaptcha
+
 <?php 
   /**
    * Codigo del receptor
