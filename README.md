@@ -1,4 +1,4 @@
-# Instalar google Recacha V3
+# Instalar google Recaptcha V3
 
 
 Buscar las claves publicas y privadas
