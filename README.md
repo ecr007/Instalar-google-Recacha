@@ -24,7 +24,7 @@ if($resp_decode->success!='true'){ $stat['error'] = "Please confirm verification
 ```javascript
 <script src='https://www.google.com/recaptcha/api.js?hl=es&render=PUBLIC_KEY'></script>
 
-<script>
+<script type="text/javascript">
 grecaptcha.ready(function () {
     grecaptcha.execute('PUBLIC_KEY', { action: 'contact' }).then(function (token) {
         $('.recaptchaResponse').val(token);
