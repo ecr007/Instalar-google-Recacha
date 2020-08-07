@@ -31,6 +31,25 @@ grecaptcha.ready(function () {
     });
 });
 </script>
+
+Con TimeOut
+<script type="text/javascript">
+
+function runtoken(){
+    grecaptcha.ready(function () {
+        grecaptcha.execute('6LeClbUZAAAAADTYeQQ1I4o1wBEyy1UP_nAj_qU1', { action: 'contact' }).then(function (token) {
+            $('.recaptchaResponse').val(token);
+        });
+    });
+    
+    setTimeout(function(){
+        runtoken();
+        console.log("exec");
+    },20000);
+}
+
+runtoken();
+</script>
 ```
 
 ## Agregar HTML
