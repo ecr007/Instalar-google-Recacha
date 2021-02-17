@@ -1,7 +1,7 @@
 $curl = curl_init();
 curl_setopt_array($curl, array(
   CURLOPT_RETURNTRANSFER => 1,
-  CURLOPT_URL => 'https://www.google.com/recaptcha/api/siteverify?secret=6Lf6dO0ZAAAAAH1jV7D751XxRx3DQAk-Ke_zfsyL&response='.$_POST["recaptcha_response"],
+  CURLOPT_URL => 'https://www.google.com/recaptcha/api/siteverify?secret=PPPP&response='.$_POST["recaptcha_response"],
 ));
 $resp = curl_exec($curl);
 curl_close($curl);	
